@@ -1,0 +1,195 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #255B3D;
+    background-color: #F5F5F5; /* Fundo cinza claro */
+}
+
+header {
+    background: #255B3D; /* Cinza escuro */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo img {
+    background-color: #F5F5F5;
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF6600; /* Laranja vibrante ao passar o mouse */
+}
+
+.hero {
+    /*background: url('imagens/logo2.png') no-repeat center center/cover;*/
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    color: #6D7985;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #6D7985;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #FF6600; /* Laranja vibrante */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #E65C00; /* Laranja mais escuro ao passar o mouse */
+}
+
+.servicos, .galeria {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff; /* Fundo branco para as seções */
+    
+}
+
+.servicos, .galeria-container {
+    margin-left: 0px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+}
+
+
+.servicos h2, .galeria h2 {
+    margin-bottom: 2rem;
+    color: #255B3D; /* Cinza escuro */
+}
+
+.servico-item, .galeria-item {
+    margin-right: 80px;
+    margin-bottom: 2rem;
+    
+}
+
+.servico-item img, .galeria-item img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.sobre {
+    padding: 2rem;
+    text-align: center;
+    background-color: #C2D2C7; /* Fundo branco */
+}
+
+.sobre h2 {
+    color: #255B3D; /* Cinza escuro */
+}
+
+.sobre p {
+    color: #666666; /* Cinza médio */
+}
+
+footer {
+    background: #255B3D; /* Cinza escuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #fff;
+    background-color: #E65C00;
+    border-radius: 5px;
+}
+/* Estilos para a seção de clientes */
+.clientes {
+    max-height: 250px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.clientes h2 {
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.carrossel-clientes {
+    margin: 0 auto;
+    min-width: 800px;
+    max-width: 800px;
+}
+
+.carrossel-clientes img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    align-content: center;
+    display: block;
+}
+
+/* Estilos do Slick Carousel */
+.slick-prev:before,
+.slick-next:before {
+    color: #FF6600; /* Cor das setas de navegação */
+}
+
+.slick-dots li button:before {
+    color: #FF6600; /* Cor dos pontos de navegação */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FF6600; /* Cor do ponto ativo */
+}
+
+/* Centralizar verticalmente as logos no carrossel */
+.carrossel-clientes .slick-slide {
+    background-color: #d8e3d8;
+    border-radius: 100px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 150px; /* Altura fixa para cada slide */
+}
+
+.carrossel-clientes img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}

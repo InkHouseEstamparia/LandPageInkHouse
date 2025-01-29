@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Clientes - INK HOUSE</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo2.png" alt="Logo INK HOUSE">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="modelos-profissionais.html">Modelos Profissionais</a></li>
+                <li><a href="itens-personalizados.html">Itens Personalizados</a></li>
+                <li><a href="nossos-clientes.html">Nossos Clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="clientes">
+        <h2>Nossos Clientes</h2>
+        <div class="carrossel-clientes">
+            <div><img src="imagens/cliente1.png" alt="Cliente 1"></div>
+            <div><img src="imagens/cliente2.png" alt="Cliente 2"></div>
+            <div><img src="imagens/cliente3.png" alt="Cliente 3"></div>
+            <div><img src="imagens/cliente4.png" alt="Cliente 4"></div>
+            <div><img src="imagens/cliente5.png" alt="Cliente 5"></div>
+            <div><img src="imagens/cliente6.png" alt="Cliente 6"></div>
+            <div><img src="imagens/cliente7.png" alt="Cliente 7"></div>
+            <div><img src="imagens/cliente8.png" alt="Cliente 8"></div>
+            <div><img src="imagens/cliente9.png" alt="Cliente 9"></div>
+            <div><img src="imagens/cliente10.png" alt="Cliente 10"></div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="tel:+4135823432" class="btn">Converse com a gente: 41 3582-3432 (whatsapp)</a>
+        <p>&copy; 2023 INK HOUSE. Todos os direitos reservados.</p>
+
+    </footer>
+
+    <!-- Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carrossel-clientes').slick({
+                dots: true, // Mostra os pontos de navegação
+                infinite: true, // Loop infinito
+                speed: 500, // Velocidade da transição
+                slidesToShow: 4, // Quantidade de logos visíveis
+                slidesToScroll: 1, // Quantidade de logos para rolar
+                autoplay: true, // Autoplay
+                autoplaySpeed: 2000, // Intervalo do autoplay
+                responsive: [
+                    {
+                        breakpoint: 768, // Ajustes para telas menores
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480, // Ajustes para telas ainda menores
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
