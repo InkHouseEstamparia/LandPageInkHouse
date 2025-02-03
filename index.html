@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INK HOUSE - Personalizados</title>
+    <script>
+        // Verifica se o protocolo é HTTP
+        if (window.location.protocol === 'http:') {
+            // Redireciona para HTTPS
+            window.location.href = 'https://' + window.location.host + window.location.pathname;
+        }
+    </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
